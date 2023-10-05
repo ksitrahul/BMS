@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    
+    <style>
+        body{
+             background: url("./AC.jpg")no-repeat center center/cover;
+                width: 100%;
+                height: 100%;
+        }
+        .Identity{
+            font-size: 17px;
+        }
+        .Contact{
+            font-size: 17px;
+        }
+        .Basic{
+           font-size: 17px;
+        }
+        .input-body input{
+            font-size: 17px;
+        }
+          .input-body1 input{
+            font-size: 17px;
+            
+        }
+        h1{
+        font-size: 50px;
+        text-align: center;
+}
+ p{
+    text-align: center;
+    
+    
+}
+p input{
+    font-size: 22px;
+    background-color: wheat;
+    
+}
+
+section{
+    margin-left: 150px;
+    margin-right: 80px;
+}
+ h4{
+    text-align: center;
+    font-size:  25px;
+}
+
+h2{
+    color: darkblue;
+    font-size: 25px;
+}
+        h5{
+            font-size: 20px;
+            color: red;
+        }
+        h6{
+            font-size: 40px;
+            text-align: center;
+            color: cornflowerblue;
+        }
+    </style>
+    <title>AddAccountant</title>
+    <link rel="stylesheet" href="./main.css">
+   
+</head>
+
+<body>
+   
+    <section>
+        
+        <div class="header">
+           
+            <h1><b><u> ARG Bank</u></b></h1>
+<!--            <h6><b><u>Add Accountant</u><b></h6>-->
+            <h2>Enter  Accountant Information :- <br><br>
+                <b> All Mandatory fields are marked with an astrisk(*).</b></h2>
+           <hr>
+           <h5><u>Fill out the form carefully.<u></h5>
+        </div>
+
+        <form>
+            <hR> <h4>Basic Info</h4>
+            <div class="Basic">
+            <div class="fname">
+                <div class="input-content">
+                    <label for="Acc. Name" class="student">
+                        <h3>  <b>Accountant Name* :-</b></h3>
+                
+                    <div class="input-body">
+                        <input type="text" placeholder="First name">
+                        <input type="text" placeholder="Middle name">
+                        <input type="text" placeholder="Last name">
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="births ">
+                <div class="input-content1">
+                    <label for="Birth" class="birth1">
+                        <h3>  <b>Birth Date* :-</b></h3>
+                    </label>
+                    <div class="input-body">
+                        <input type="date" name="dob" placeholder="Month" class="date">
+
+
+                    </div>
+                </div>
+
+
+                <div class="input-content2">
+                    <label for="Gender" class="gender">
+                        <h3>  <b>   Gender* :- </b></h3>
+                    </label>
+                    <div class="input-body">
+                        <select type="text" placeholder="Please Select">
+                            <option value="0"> Male </option>
+                            <option value="0"> Female </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="add">
+                <div class="input-content3">
+                    <label for="Address" class="add1">
+                        <h3>  <b>Address* :- </b></h3>
+                    </label>
+
+                    <div class="input-body">
+                        <div>
+                            <input type="text" placeholder="Street Address"> 
+                             <input type="text" placeholder="Street Address2">
+                        </div><br>
+                        
+                        <div class="city">
+                            <input type="text" placeholder="city">
+                             <input type="text" placeholder="zip code">
+                            
+                        </div><br>
+                        <div>
+                           <input type="text" placeholder="State">
+                        </div>
+                    </div>
+
+                </div>
+            
+            
+            </div><br><hr>
+
+            <br><h4> Contact Details  </h4><div class="mail">
+                
+                <div class="Contact">
+                    <label for="E-mail" class="E-mail">
+                        <h3>   <b>     Accountant E-mail* :-  </b></h3>
+                    </label>
+
+                    <div class="input-body1">
+                        <div>
+                            <input type="text" placeholder="ex:myname@example@com">
+                        </div><br>
+
+                    </div>
+
+                
+             
+                    <label for="Mobile Number" class="Mobile Number">
+                        <h3> <b>    Mobile Number* :- </b></h3>
+                    </label>
+                    <div class="input-body1">
+                        <input type="text" placeholder="(000)000-0000">
+                    </div><br>
+                </div>
+
+
+            
+
+            <div class="mail">
+                
+                    <label for="Phone Number" class="E-mail">
+                        <h3> <b>  AlternateNumber :-</b></h3>
+                    </label>
+
+                    <div class="input-body1">
+                        <div>
+                            <input type="text" placeholder="(000)000-0000">
+                        </div><br>
+
+                    </div>
+
+                </div>
+                
+
+            </div>
+
+            <div class="Identity">
+                <hr> <h4><b>Identity Info</b></h4>
+                
+                    <label for="Aadhaar No." class="Aadhaar ">
+                        <h3>    <b>Aadhaar No.* :-</b></h3>
+                    </label>
+                    <div class="input-body1">
+                        <input type="text" placeholder="Aadhaar No.">
+
+                    <br>
+
+               
+
+                
+                   
+                        <label for="Pan No." class="Pan">
+                            <h3> <b>Pan No.* :-</b></h3>
+                        </label>
+                        
+                            <input type="text" placeholder="Pan">
+                    </div>
+                        </div><br>
+
+              
+
+                
+
+              
+
+            <hr>
+            <br>
+
+             
+            <p> <input type="submit" value="Submit Details">&nbsp;
+                <input type="reset" value="Clear Details"></p>
+                  
+             </form>
+</section>
+
+</body>
+
+</html>

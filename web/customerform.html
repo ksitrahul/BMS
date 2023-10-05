@@ -1,0 +1,94 @@
+
+<html>
+    <head>
+        <title>Add Customer</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body{
+           background: url("./cust.jpg") no-repeat center center/cover;
+width: 98%;
+height: 120%;
+        }
+        h1
+            {
+                font-size: 37px;
+                color: darkblue;
+            }
+             h2
+            {
+                font-size: 15px;
+                color: darkblue;
+            }
+             h3
+             {
+               font-size: 20px;
+                color: black;
+            }
+             h4
+            {
+                font-size: 24px;
+                color: darkslateblue;
+            }
+             h5
+            {
+                font-size: 20px;
+                color: crimson;
+            }
+       
+            </style>
+    </head>
+    <body>
+            <br> <br> <h1> Bank Account Registration Form </h1>
+        <h2>Create your bank account by filling in this bank account registration form. All mandatory fields are marked with an asterisk(*).</h2>
+        <hr> <h4>Account Type</h4><hr>
+        <form action="custform_save" method="Post">
+        <h3>Please specify the type of account you <br> want to open.*</h3>
+        
+      <select name="account_type"> <option>*Please Select*</option> <option> Checking Account</option><option> Saving Account</option><option>Certificate of Deposit</option><option> Money Market Account</option><option>IRA</option>
+      </select>
+        <h3> Currency * </h3>
+        <input type="radio"  value="EURO" name="currency"> EURO
+         <input type="radio" value="INR" name="currency"> INR 
+         <input type="radio" value="USD" name="currency"> USD
+        <hr><h4>Contact Information</h4><hr>
+         <h3>Name *</h3>
+         <select name="title"> <option>Title</option><option>Mr.</option><option>Mrs</option><option>Miss</option><option>Ms</option>
+    </select>&nbsp;&nbsp;
+    <input type="text" placeholder="First name" name="first_name" required/>&nbsp;&nbsp;
+    <input type="text" placeholder="Middle name" name="middle_name"  required/>&nbsp;&nbsp;
+    <input type="text" placeholder="Last name" name="last_name" required/>
+                        
+                        <h3> Mobile Number * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Email ID  *</h3>
+                        <input type="text" placeholder="(000)000-0000" name="contact_no"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="email" placeholder="abc@gmail.com" name="email_id" required/>
+                        <h3>Home Address *</h3>
+                        <textarea name="address" style="width: 400px; height: 70px;"></textarea> <br><br>                        
+                        <input type="text" placeholder="City" name="city"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="text" placeholder="State" name="state"> <br><br>
+                         <input type="text" placeholder="Postal / Zipcode" name="postal"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         <input type="text" placeholder="Country" name="country"/>
+                         <hr> <h4>Identification</h4><hr>
+                         <h3>Citizenship: *</h3>
+                        <input type="radio" value="India" name="citizenship"> INDIA
+         <input type="radio" value="Other" name="citizenship"> OTHER 
+ 
+ 
+<h3>DOB &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Marital Status *</h3> <input type="date" name="dob" placeholder="Month" class="date">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <select name="marital_status"><option>Married</option><option> Widowed</option><option> Separated</option><option> Divorced</option><option> Single</option></select>
+<h3> Language (Native) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; Occupation</h3>
+<input type="text" name="language"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="occupation"/>
+<hr> <h4>Account Information</h4><hr>
+<h3>Account Number&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Customer ID</h3><input type="text" name="account_no"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<input type="text" name="cust_id"/>
+<hr>   <h4>Terms & Conditions</h4><hr>
+                        <h5>By completing this account registration form, you agree to the terms and conditions that govern <br>your account and your relationship with the bank. <br><br>
+                            Please check the box below to confirm agreement before sending the bank <br>account registration information.</h5>
+<input type="submit" value="Submit Details">&nbsp;
+<input type="reset" value="Clear Details"><br><br>
+        </form>
+    </body>
+</html>
